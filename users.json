@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "Alice Johnson",
+        "desc": "Frontend developer",
+        "email": "alice.johnson@example.com"
+    },
+  {
+    "id": 2,
+    "name": "Bob Smith",
+    "desc": "Backend developer",
+    "email": "bob.smith@example.com"
+  },
+  {
+    "id": 3,
+    "name": "Carla Reyes",
+    "desc": "Fullstack engineer",
+    "email": "carla.reyes@example.com"
+  },
+  {
+    "id": 4,
+    "name": "Daniel Kim",
+    "desc": "QA engineer",
+    "email": "daniel.kim@example.com"
+  },
+  {
+    "id": 5,
+    "name": "Eva Lopez",
+    "desc": "Product manager",
+    "email": "eva.lopez@example.com"
+  }
+]
