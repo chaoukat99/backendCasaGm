@@ -15,6 +15,9 @@
 import http from "http";
 
 
+import { username } from "./data.js";
+
+
 // const fs=require("fs");
 import fs from "fs"
 
@@ -82,7 +85,14 @@ const server = http.createServer((req,res)=>{
 // deploy the server 
 
 
-server.listen(3000,()=>console.log("server is running on http://localhost:3000"));
+server.listen(3000,
+    ()=>{
+
+  
+        console.log("server is running on http://localhost:3000")
+
+    }
+);
 
 
 
@@ -95,3 +105,5 @@ server.listen(3000,()=>console.log("server is running on http://localhost:3000")
 
 // file 1 : hi
 // file 2 : hello
+
+

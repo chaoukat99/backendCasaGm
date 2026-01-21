@@ -1,6 +1,6 @@
 // 
 
-// const fs=require("fs");
+// const fs=require("fs"); // common js 
 import fs from "fs";
 
 
