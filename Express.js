@@ -115,8 +115,50 @@ server.post("/createFile",(req,res)=>{
 
 
 
+server.put("/users/:id",(req,res)=>{
+
+    // Get id 
+const id = req.params.id
+    // Get new Value 
+
+ const {name,age}=req.body;  
+    // update
+    // uodate logic
+})
 
 
+
+
+
+// server.patch("/users/:id",(req,res)=>{
+
+//     // Get id 
+// const id = req.params.id
+//     // Get new Value 
+
+//  const {name,age}=req.body;  
+//     // update
+//     // update logic
+// })
+
+
+
+
+
+server.delete("/files/:filename",(req,res)=>{
+
+
+    const filename=req.params.filename;
+
+    fs.unlink(`${filename}.txt`,(err)=>{
+        if(!err){
+            res.status(200).json({msg:"file deleted"})
+        }else{
+            res.status(500).json({msg:"Erreur"})
+
+        }
+    })
+})
 
 
 
@@ -132,6 +174,9 @@ server.listen(3001,()=>{
     console.log("the server is running in http://localhost:3001");
 })
 
+
+
+// HTTP REQUEST f server (GET GET/1  POST PUT PATCH DELETE )
 
 
 // fetch(" http://localhost:3001")
@@ -166,4 +211,16 @@ server.listen(3001,()=>{
 //     filename:"cv",
 //     content:"this is content jjjjs jsdbsjdjsdgsj"
 // }
+
+
+
+
+// File handling with http request methods 
+
+// Read file content (GET)
+// create new file (POST)
+
+// update  (PUT/Patch)
+
+// delete  (DELETE)
 
